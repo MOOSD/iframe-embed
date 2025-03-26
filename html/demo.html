@@ -117,43 +117,76 @@
         >
             <el-menu-item index="1">
                 <!-- <i class="el-icon-s-home"></i> -->
-                <span slot="title">智能问答(直接嵌入,非同源)</span>
+                <span slot="title">智能问答(直接嵌入)</span>
             </el-menu-item>
             <el-menu-item index="2">
                 <!-- <i class="el-icon-document"></i> -->
-                <span slot="title">知识图谱构建(直接嵌入,非同源)</span>
+                <span slot="title">知识图谱构建(直接嵌入)</span>
             </el-menu-item>
             <el-menu-item index="3">
                 <!-- <i class="el-icon-setting"></i> -->
-                <span slot="title">模型微调(直接嵌入,非同源)</span>
+                <span slot="title">模型微调(直接嵌入)</span>
             </el-menu-item>
             <el-menu-item index="4">
                 <!-- <i class="el-icon-user"></i> -->
-                <span slot="title">数据治理(直接嵌入,非同源)</span>
+                <span slot="title">数据治理(直接嵌入)</span>
             </el-menu-item>
             <el-menu-item index="5">
                 <!-- <i class="el-icon-s-data"></i> -->
-                <span slot="title">流程编排(直接嵌入,非同源)</span>
+                <span slot="title">流程编排(直接嵌入)</span>
             </el-menu-item>
             <el-menu-item index="6">
                 <!-- <i class="el-icon-s-home"></i> -->
-                <span slot="title">智能问答(走ng,同源)</span>
+                <span slot="title">----------------</span>
             </el-menu-item>
             <el-menu-item index="7">
-                <!-- <i class="el-icon-document"></i> -->
-                <span slot="title">知识图谱构建(走ng,同源)</span>
+                <!-- <i class="el-icon-s-home"></i> -->
+                <span slot="title">智能问答(ng同源)</span>
             </el-menu-item>
             <el-menu-item index="8">
-                <!-- <i class="el-icon-setting"></i> -->
-                <span slot="title">模型微调(走ng,同源)</span>
+                <!-- <i class="el-icon-document"></i> -->
+                <span slot="title">知识图谱构建(ng同源)</span>
             </el-menu-item>
             <el-menu-item index="9">
-                <!-- <i class="el-icon-user"></i> -->
-                <span slot="title">数据治理(走ng,同源)</span>
+                <!-- <i class="el-icon-setting"></i> -->
+                <span slot="title">模型微调(ng同源)</span>
             </el-menu-item>
             <el-menu-item index="10">
+                <!-- <i class="el-icon-user"></i> -->
+                <span slot="title">数据治理(ng同源)</span>
+            </el-menu-item>
+            <el-menu-item index="11">
                 <!-- <i class="el-icon-s-data"></i> -->
-                <span slot="title">流程编排(走ng,同源)</span>
+                <span slot="title">流程编排(ng同源)</span>
+            </el-menu-item>
+            <el-menu-item index="12">
+                <!-- <i class="el-icon-s-data"></i> -->
+                <span slot="title">----------------</span>
+            </el-menu-item>
+
+            <el-menu-item index="13">
+                <!-- <i class="el-icon-s-home"></i> -->
+                <span slot="title">智能问答(ng同站)</span>
+            </el-menu-item>
+            <el-menu-item index="14">
+                <!-- <i class="el-icon-document"></i> -->
+                <span slot="title">知识图谱构建(ng同站)</span>
+            </el-menu-item>
+            <el-menu-item index="15">
+                <!-- <i class="el-icon-setting"></i> -->
+                <span slot="title">模型微调(ng同站)</span>
+            </el-menu-item>
+            <el-menu-item index="16">
+                <!-- <i class="el-icon-user"></i> -->
+                <span slot="title">数据治理(ng同站)</span>
+            </el-menu-item>
+            <el-menu-item index="17">
+                <!-- <i class="el-icon-s-data"></i> -->
+                <span slot="title">流程编排(ng同站)</span>
+            </el-menu-item>
+            <el-menu-item index="20">
+                <!-- <i class="el-icon-s-data"></i> -->
+                <span slot="title">嵌入第三方网站(同站)</span>
             </el-menu-item>
         </el-menu>
     </div>
@@ -178,16 +211,24 @@
                 currentUrl: 'https://example.com',
                 currentTitle: '首页',
                 tabs: [
-                    { id: '1', title: '智能问答(直接嵌入,非同源)', url: 'http://203.0.107.235:18081/xchat-fe' },
-                    { id: '2', title: '知识图谱构建(直接嵌入,非同源)', url: 'http://203.0.107.235:38088' },
-                    { id: '3', title: '模型微调(直接嵌入,非同源)', url: 'http://203.0.107.235:18080' },
-                    { id: '4', title: '数据治理(直接嵌入,非同源)', url: 'http://203.0.107.235:12102' },
-                    { id: '5', title: '流程编排(直接嵌入,非同源)', url: 'http://203.0.107.235:3001' },
-                    { id: '6', title: '智能问答(走ng,同源)', url: 'http://localhost/18081' },
-                    { id: '7', title: '知识图谱构建(走ng,同源)', url: 'http://localhost/38088' },
-                    { id: '8', title: '模型微调(走ng,同源)', url: 'http://localhost/18080' },
-                    { id: '9', title: '数据治理(走ng,同源)', url: 'http://localhost/12102' },
-                    { id: '10', title: '流程编排(走ng,同源)', url: 'http://localhost/3001' },
+                    { id: '1', title: '智能问答(直接嵌入)', url: 'http://203.0.107.235:18081/xchat-fe' },
+                    { id: '2', title: '知识图谱构建(直接嵌入)', url: 'http://203.0.107.235:38088' },
+                    { id: '3', title: '模型微调(直接嵌入)', url: 'http://203.0.107.235:18080' },
+                    { id: '4', title: '数据治理(直接嵌入)', url: 'http://203.0.107.235:12102' },
+                    { id: '5', title: '流程编排(直接嵌入)', url: 'http://203.0.107.235:3001' },
+                    { id: '6', title: '----------------', url: '' },
+                    { id: '7', title: '智能问答(ng同源)', url: 'http://localhost/18081' },
+                    { id: '8', title: '知识图谱构建(ng同源)', url: 'http://localhost/38088' },
+                    { id: '9', title: '模型微调(ng同源)', url: 'http://localhost/18080' },
+                    { id: '10', title: '数据治理(ng同源)', url: 'http://localhost/12102' },
+                    { id: '11', title: '流程编排(ng同源)', url: 'http://localhost/3001' },
+                    { id: '12', title: '----------------', url: '' },
+                    { id: '13', title: '智能问答(ng同站)', url: 'http://localhost:18081' },
+                    { id: '14', title: '知识图谱构建(ng同站)', url: 'http://localhost:38088' },
+                    { id: '15', title: '模型微调(ng同站)', url: 'http://localhost:18080' },
+                    { id: '16', title: '数据治理(ng同站)', url: 'http://localhost:12102' },
+                    { id: '17', title: '流程编排(ng同站)', url: 'http://localhost:3001' },
+                    { id: '20', title: '嵌入第三方网站(同站)', url: 'http://localhost:8080/d/de9uevfyipkw0f/82e154c3-e5f7-58d5-a593-8c7c251b6f0c?orgId=1var-jvm_memory_pool_heap=All&var-jvm_memory_pool_nonheap=All&var-jvm_buffer_pool=All&var-project=hawkeye&var-environment=dev&var-application=gateway&from=now-24h&to=now&theme=light&kiosk' },
 
                 ]
             };
